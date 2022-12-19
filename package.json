@@ -1,0 +1,20 @@
+{
+  "name": "snow",
+  "version": "1.0.0",
+  "dependencies": {
+    "@types/yargs": "^17.0.17",
+    "fast-check": "^3.4.0",
+    "fp-ts": "^2.13.1",
+    "yargs": "^17.6.2"
+  },
+  "bin": {
+    "snow": "./dist/main.js"
+  },
+  "scripts": {
+    "build": "yarn tsc",
+    "prepack": "yarn build; chmod +x dist/main.js"
+  },
+  "devDependencies": {
+    "typescript": "^4.9.4"
+  }
+}
